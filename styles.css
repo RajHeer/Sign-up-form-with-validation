@@ -22,7 +22,8 @@ main {
 .side-section {
     flex-grow: 2;
     padding: 200px 40px;
-    border: red solid;
+    background: url(./assets/ismael-paramo-mYBybDaWUzM-unsplash.jpg)
+    right top;
 }
 
 .sign-up-section {
