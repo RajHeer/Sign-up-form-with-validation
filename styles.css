@@ -59,7 +59,7 @@ img {
 .sign-up-section {
     min-width: 380px;
     max-width: 700px;
-    background-color: whitesmoke;
+    background: linear-gradient(0deg, rgba(180,193,193,1) 0%, rgba(255,255,255,1) 100%);
 }
 
 header {
@@ -90,10 +90,11 @@ form {
 
 fieldset {
     padding: 20px;
-    background-color: white;
+    background-color: whitesmoke;
     display: grid;
     grid-gap: 15px;
     grid-template-columns: 1fr 1fr;
+    border: none;
     
 }
 
