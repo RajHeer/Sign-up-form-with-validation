@@ -75,6 +75,8 @@ header > p {
 
 header > p:last-of-type {
     font-size: 1.5rem;
+    width: 55%;
+    margin: 0 auto;
 }
 
 .italics {
@@ -106,10 +108,23 @@ label, input, button {
 
 label {
     font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.3ch;
 }
 
 input {
     width: 90%;
+    height: 25px;
+    padding-left: 5px;
+    font-size: 1rem;
     border-radius: 5%;
-    background-color: rgba(255, 221, 204, 1);
+}
+
+input:hover {
+    background-color: rgba(255, 221, 204, 0.5);
+}
+
+input:focus {
+    outline: none;
+    border: rgb(190, 77, 37, 1) 2px solid;
 }
