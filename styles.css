@@ -71,6 +71,7 @@ header {
 
 header > p {
     margin-bottom: 70px;
+    text-align: center;
 }
 
 header > p:last-of-type {
