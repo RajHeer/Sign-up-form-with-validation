@@ -128,3 +128,21 @@ input:focus {
     outline: none;
     border: rgb(190, 77, 37, 1) 2px solid;
 }
+
+button {
+    background-color:  rgb(190, 77, 37, 0.5);
+    display: block;
+    margin: 20px auto;
+    font-size: 1rem;
+    padding: 4px 8px;
+    border-radius: 5%;
+}
+
+button:active {
+    background-color:  rgb(190, 77, 37, 1);
+}
+
+.sign-up-section > p:last-of-type {
+    margin-top: 10px;
+    text-align: center;
+}
