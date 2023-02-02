@@ -122,6 +122,10 @@ input {
     border-radius: 5%;
 }
 
+input.invalid {
+    border: solid red;
+}
+
 input:hover {
     background-color: rgba(255, 221, 204, 0.5);
 }

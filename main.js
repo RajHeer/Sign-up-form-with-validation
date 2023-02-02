@@ -10,6 +10,7 @@ function validate () {
     inputs.forEach(input => {
         input.addEventListener('invalid', () => {
             input.setCustomValidity('Ten-hut! Provide info!');
+            input.classList.add('invalid');
         });
     });
 }
