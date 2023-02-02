@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form mock-up</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -30,18 +31,18 @@
             <p>Your <span class="italics">destiny</span> calls.</p>
         </header>
 
-        <form action="" method="post">
+        <form action="" method="">
             <fieldset>
                 <p>ENLIST!</p>
-                    <label for="first_name">FIRST NAME
+                    <label for="first_name">FIRST NAME*
                     <input type="text" name="firstName" id="first_name" required>
                     </label>
 
-                    <label for="last_name">LAST NAME
+                    <label for="last_name">LAST NAME*
                     <input type="text" name="lastName" id="last_name" required>
                     </label>
 
-                    <label for="email">EMAIL
+                    <label for="email">EMAIL*
                     <input type="email" name="email" id="email" required>
                     </label>
 
@@ -58,7 +59,7 @@
                     </label>
             </fieldset>
 
-            <button>Create Account</button>
+            <button type="submit" value="submit" id="submit">Create Account</button>
         </form>
 
         <p>Already have an account? <a href="">Log in</a></p>
