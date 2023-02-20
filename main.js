@@ -2,15 +2,38 @@
 const submitBTN = document.querySelector('#submit');
 const inputs = document.querySelectorAll('input');
 
-// LISTENER
+// LISTENERS
+
+inputs.forEach(input => {
+    input.addEventListener('input', () => {
+      const inputError = input.nextElementSibling;
+      if (input.validity.valid) {
+        inputError.textContent = '';
+        inputError.className = 'error';
+      } else {
+        showError(input);
+      }
+    })
+  });
 
 submitBTN.addEventListener('click', validate);
 
-function validate () {
+// FUNCTIONS //
+
+function showError(input) {
+      const inputError = input.nextElementSibling;
+      if (input.validity.valueMissing) {
+        inputError.textContent = 'Required';
+      } else if (input.validity.typeMismatch) {
+        inputError.textContent = 'Incorrect format';
+      }
+}
+
+function validate (e) {
     inputs.forEach(input => {
-        input.addEventListener('invalid', () => {
-            input.setCustomValidity('Ten-hut! Provide info!');
-            input.classList.add('invalid');
-        });
+        if (!input.validity.valid) {
+            e.preventDefault();
+            showError(input);
+        }
     });
 }

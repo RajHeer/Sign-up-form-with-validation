@@ -31,31 +31,37 @@
             <p>Your <span class="italics">destiny</span> calls.</p>
         </header>
 
-        <form action="" method="">
+        <form action="" method="" novalidate>
             <fieldset>
                 <p>ENLIST!</p>
                     <label for="first_name">FIRST NAME*
                     <input type="text" name="firstName" id="first_name" required>
+                    <span class="error"></span>
                     </label>
 
                     <label for="last_name">LAST NAME*
                     <input type="text" name="lastName" id="last_name" required>
+                    <span class="error"></span>
                     </label>
 
                     <label for="email">EMAIL*
                     <input type="email" name="email" id="email" required>
+                    <span class="error"></span>
                     </label>
 
                     <label for="phone">PHONE NUMBER
                     <input type="tel" name="phone" id="phone">
+                    <span class="error"></span>
                     </label>
 
                     <label for="password">PASSWORD
                     <input type="password" name="password" id="password">
+                    <span class="error"></span>
                     </label>
 
                     <label for="confirm_password">CONFIRM PASSWORD
-                    <input type="password" name="confirm_password" id="confirm_password"> 
+                    <input type="password" name="confirm_password" id="confirm_password">
+                    <span class="error"></span> 
                     </label>
             </fieldset>
 
