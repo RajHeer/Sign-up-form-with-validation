@@ -26,6 +26,8 @@ function showError(input) {
         inputError.textContent = 'Required';
       } else if (input.validity.typeMismatch) {
         inputError.textContent = 'Incorrect format';
+      } else if (input.validity.patternMismatch) {
+        inputError.textContent = 'Eleven digits'
       }
 }
 
